@@ -461,7 +461,7 @@ async def cmd_recomend(message: Message):
         eng_names_food = get_low_calorie()
         food_recomendation = "\n".join(
             [
-                f"✔️ {await translate(food, lang="en", lang_to="ru")} (100 грамм ≈ {get_food_data(food)["foods"][0]['nf_calories']} ккал)"
+                f"✔️ {await translate(food, lang='en', lang_to='ru')} (100 грамм ≈ {get_food_data(food)['foods'][0]['nf_calories']} ккал)"
                 for food in eng_names_food
             ]
         )
