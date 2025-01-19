@@ -120,6 +120,14 @@
   <p><i>Успешное развёртывание на <a href="https://railway.com/" target="_blank">Railway</a></i></p>
 </div>
 
+Ниже представлены скриншоты логов.
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/c5a7fb60-81ab-4ebd-943d-cac7d8cfadd2">
+  <p><i>Build Logs на <a href="https://railway.com/" target="_blank">Railway</a></i></p>
+</div>
+
+
 <p align="right">(<a href="#readme-top">Вернуться к началу</a>)</p>
 
 ## Примеры использования
