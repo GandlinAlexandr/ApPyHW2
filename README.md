@@ -155,7 +155,7 @@
 Команда редактирования профиля без его удаления:
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/1fe241e1-3e46-44a3-b38f-2143ada1810b" alt="3">
+  <img src="https://github.com/user-attachments/assets/407c324a-1b50-46ca-8c1e-0c56447416a5" alt="3">
   <p><i>Команды <code>/edit_profile</code>, <code>/my_profile</code></i></p>
 </div>
 
