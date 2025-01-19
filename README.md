@@ -113,22 +113,23 @@
 
 ### Деплой
 
+
 Развёртывание телеграм-бота осуществлено на инфраструктурной платформе [Railway](https://railway.com/) с тарифным планом Trial.
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/ea911127-93a9-41b3-ba8d-20225c763fb5">
+  <img src="https://github.com/user-attachments/assets/e7b8e974-1601-4252-b65e-b24f62dddcf4">
   <p><i>Успешное развёртывание на <a href="https://railway.com/" target="_blank">Railway</a></i></p>
 </div>
 
 Ниже представлены скриншоты логов.
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/c5a7fb60-81ab-4ebd-943d-cac7d8cfadd2">
+  <img src="https://github.com/user-attachments/assets/433d8d12-c527-48d7-8db7-913aa004449f">
   <p><i>Build Logs на <a href="https://railway.com/" target="_blank">Railway</a></i></p>
 </div>
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/6941e84e-1be2-4e68-9183-769ddd434edb">
+  <img src="https://github.com/user-attachments/assets/411a4981-9705-40c8-8240-3885c0311aa7">
   <p><i>Deploy Logs на <a href="https://railway.com/" target="_blank">Railway</a></i></p>
 </div>
 
