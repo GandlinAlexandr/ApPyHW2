@@ -153,8 +153,9 @@
 </div>
 
 Команда редактирования профиля без его удаления:
+
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/63e50f86-b2be-4ac1-863c-4bdca7137f64" alt="3">
+  <img src="https://github.com/user-attachments/assets/1fe241e1-3e46-44a3-b38f-2143ada1810b" alt="3">
   <p><i>Команды <code>/edit_profile</code>, <code>/my_profile</code></i></p>
 </div>
 
@@ -168,7 +169,7 @@
 Ниже приведены примеры обработки неверных вводов.
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/5357af2e-e61b-427e-8b97-9dc2164d9180" alt="5">
+  <img src="https://github.com/user-attachments/assets/a7988940-f658-4af9-9eb7-a2163196d13b" alt="5">
   <p><i>Примеры обработки неверных вводоов</a></i></p>
 </div>
 
