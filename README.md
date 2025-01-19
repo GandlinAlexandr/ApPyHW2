@@ -26,6 +26,7 @@
     <li><a href="#предоставляемые-функции">Предоставляемые функции</a></li>
     <li><a href="#команды">Команды</a></li></ul>
     <li><a href="#деплой">Деплой</a></li></ul>
+    <li><a href="#примеры-использования">Примеры использования</a></li>
       <li><a href="#лицензия">Лицензия</a></li>
     <li><a href="#контакты">Контакты</a></li>
   </ol>
@@ -113,6 +114,44 @@
 <div align="center">
   <img src="https://github.com/user-attachments/assets/221d4bd1-45ee-4d25-9f91-99882b25a1fd" alt="Деплой">
   <p><i>Успешное развёртывание на <a href="https://railway.com/" target="_blank">Railway</a></i></p>
+</div>
+
+<p align="right">(<a href="#readme-top">Вернуться к началу</a>)</p>
+
+## Примеры использования
+
+Основные команды.
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/2fc22a66-7a0d-4f0c-b2a6-bdac7e125d2c" alt="1">
+  <p><i>Команды <code>/start</code>, <code>/help</code>, <code>/set_profile</code>, <code>/my_profile</code></i></p>
+</div>
+
+Команды, связанные с логированием.
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/cf1b6122-07fc-476a-9f0a-80eef97ce0df" alt="2">
+  <p><i>Команды <code>/log_water</code>, <code>/log_food</code>, <code>/log_workout</code>, <code>/my_profile</code>, <code>/check_progress</code></i></p>
+</div>
+
+Команда редактирования профиля без его удаления:
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/63e50f86-b2be-4ac1-863c-4bdca7137f64" alt="3">
+  <p><i>Команды <code>/edit_profile</code>, <code>/my_profile</code></i></p>
+</div>
+
+Команда, выдающая графики прогресса по дням (максимум за 10 последних дней).
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/f6994871-6b7f-4ec1-b849-5db52ddb84da" alt="4">
+  <p><i>Команда <code>/global_progress</code></i></p>
+</div>
+
+Ниже приведены примеры обработки неверных вводов.
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/5357af2e-e61b-427e-8b97-9dc2164d9180" alt="5">
+  <p><i>Примеры обработки неверных вводоов</a></i></p>
 </div>
 
 <p align="right">(<a href="#readme-top">Вернуться к началу</a>)</p>
