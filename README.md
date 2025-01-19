@@ -116,7 +116,7 @@
 Развёртывание телеграм-бота осуществлено на инфраструктурной платформе [Railway](https://railway.com/) с тарифным планом Trial.
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/221d4bd1-45ee-4d25-9f91-99882b25a1fd" alt="Деплой">
+  <img src="https://github.com/user-attachments/assets/ea911127-93a9-41b3-ba8d-20225c763fb5">
   <p><i>Успешное развёртывание на <a href="https://railway.com/" target="_blank">Railway</a></i></p>
 </div>
 
