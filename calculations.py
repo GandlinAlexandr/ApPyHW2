@@ -106,7 +106,7 @@ def global_calorie(calorie_df):
 
     plt.xticks(rotation=45)
     plt.xlabel("Дата")
-    plt.ylabel("Количество калорий")
+    plt.ylabel("Количество калорий, ккал")
     plt.title("Глобальный прогресс по калориям")
     handles, labels = plt.gca().get_legend_handles_labels()
     new_labels = ["Цель", "Потреблено", "Сожжено"]
