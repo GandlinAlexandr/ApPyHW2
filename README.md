@@ -1,5 +1,9 @@
 <a name="readme-top"></a>
 
+[![MIT][license-shield]][license-url]
+[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org/)
+[!['Black'](https://img.shields.io/badge/code_style-black-black?style=for-the-badge)](https://github.com/psf/black)
+
   <h1 align="center">Фитнес-бот</h1>
 
   <p align="center">
