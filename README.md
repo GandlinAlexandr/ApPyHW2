@@ -127,6 +127,11 @@
   <p><i>Build Logs на <a href="https://railway.com/" target="_blank">Railway</a></i></p>
 </div>
 
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/6941e84e-1be2-4e68-9183-769ddd434edb">
+  <p><i>Deploy Logs на <a href="https://railway.com/" target="_blank">Railway</a></i></p>
+</div>
+
 
 <p align="right">(<a href="#readme-top">Вернуться к началу</a>)</p>
 
