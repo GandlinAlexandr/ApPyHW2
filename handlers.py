@@ -33,23 +33,7 @@ async def translate(text, lang="ru", lang_to="en"):
             raise Exception("Ошибка перевода")
 
 
-users = {
-    "87072500": {
-        "18.01.2025": {
-            "weight": 60,
-            "height": 160,
-            "age": 32,
-            "activity": 30,
-            "city": "Осло",
-            "calorie_goal": 1590,
-            "water_goal": 2300,
-            "logged_water": 0,
-            "logged_calories": 0,
-            "burned_calories": 0,
-            "calorie_goal_type": "calc",
-        }
-    }
-}
+users = {}
 
 
 def add_today_data(users, chat_id, today):
