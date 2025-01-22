@@ -12,7 +12,7 @@ from calculations import (
     global_calorie,
     global_water,
 )
-from API import get_food_data, get_exercise_data, get_low_calorie
+from API import get_food_data, get_exercise_data, get_low_calorie, get_weather
 import datetime
 import httpx
 import pandas as pd
@@ -33,23 +33,7 @@ async def translate(text, lang="ru", lang_to="en"):
             raise Exception("Ошибка перевода")
 
 
-users = {
-    "87072500": {
-        "18.01.2025": {
-            "weight": 60,
-            "height": 160,
-            "age": 32,
-            "activity": 30,
-            "city": "Осло",
-            "calorie_goal": 1590,
-            "water_goal": 2300,
-            "logged_water": 0,
-            "logged_calories": 0,
-            "burned_calories": 0,
-            "calorie_goal_type": "calc",
-        }
-    }
-}
+users = {}
 
 
 def add_today_data(users, chat_id, today):
@@ -206,14 +190,20 @@ async def set_activity(message: Message, state: FSMContext):
 @router.message(ProfileSetup.city)
 async def set_city(message: Message, state: FSMContext):
     city = message.text
-    await update_state_and_ask(
-        state,
-        "city",
-        city,
-        ProfileSetup.calorie_goal,
-        message,
-        "Введите цель по калориям или напишите '0', чтобы использовать рассчитанную норму:",
-    )
+    if get_weather(city) != {}:
+        await update_state_and_ask(
+            state,
+            "city",
+            city,
+            ProfileSetup.calorie_goal,
+            message,
+            "Введите цель по калориям или напишите '0', чтобы использовать рассчитанную норму:",
+        )
+    else:
+        await message.answer(
+            "Пожалуйста, проверьте корректность написание названия города. "
+            "Введите корректное название:"
+        )
 
 
 # Устанавливаем цель по калориям
@@ -636,6 +626,7 @@ async def set_value(message: Message, state: FSMContext):
     data = await state.get_data()
     selected_params = data["selected_params"]
 
+    # Новый вес
     if selected_params[0] == "weight":
         try:
             new_value = int(message.text)
@@ -673,6 +664,8 @@ async def set_value(message: Message, state: FSMContext):
         except ValueError:
             await message.answer("Пожалуйста, введите число для изменения веса в кг.")
             return
+
+    # Новый рост
     if selected_params[0] == "height":
         try:
             new_value = int(message.text)
@@ -702,6 +695,8 @@ async def set_value(message: Message, state: FSMContext):
         except ValueError:
             await message.answer("Пожалуйста, введите число для изменения роста в см.")
             return
+
+    # Новый возраст
     if selected_params[0] == "age":
         try:
             new_value = int(message.text)
@@ -733,6 +728,8 @@ async def set_value(message: Message, state: FSMContext):
                 "Пожалуйста, введите число для изменения возраста в годах."
             )
             return
+
+    # Новая длительность активности
     if selected_params[0] == "activity":
         try:
             new_value = int(message.text)
@@ -773,9 +770,11 @@ async def set_value(message: Message, state: FSMContext):
                 "Пожалуйста, введите число для изменения длительность ежедневной активности в минутах."
             )
             return
+
+    # Новый город
     if selected_params[0] == "city":
-        try:
-            new_value = message.text
+        new_value = message.text
+        if get_weather(new_value) != {}:
             await update_user_parameter(
                 users, chat_id, today, selected_params[0], new_value
             )
@@ -794,9 +793,14 @@ async def set_value(message: Message, state: FSMContext):
                 f"Вслед за ним обновился параметр:\n\n"
                 f"💦 Норма воды — теперь {water_goal} мл."
             )
-        except ValueError:
-            await message.answer("Пожалуйста, введите название города.")
+        else:
+            await message.answer(
+                "Пожалуйста, проверьте корректность написание названия города. "
+                "Введите корректное название:"
+            )
             return
+
+    # Новая цель по калориям
     if selected_params[0] == "calorie_goal":
         try:
             new_value = int(message.text)
